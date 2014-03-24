@@ -17,17 +17,17 @@
 
 <p>
   <strong>User:</strong>
-  <%= @line_item.user %>
+  <%= @line_item.user.name %>
 </p>
 
 <p>
   <strong>Vendor:</strong>
-  <%= @line_item.vendor %>
+  <%= @line_item.vendor.name %>
 </p>
 
 <p>
   <strong>Activity:</strong>
-  <%= @line_item.activity %>
+  <%= @line_item.activity.name %>
 </p>
 
 <%= link_to 'Edit', edit_line_item_path(@line_item) %> |

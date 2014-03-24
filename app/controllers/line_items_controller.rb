@@ -69,6 +69,6 @@ class LineItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def line_item_params
-      params.require(:line_item).permit(:purchased_on, :cost, :comment, :user, :vendor, :activity)
+      params.require(:line_item).permit(:purchased_on, :cost, :comment, :user_id, :vendor_id, :activity_id)
     end
 end

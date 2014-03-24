@@ -25,15 +25,17 @@
   </div>
   <div class="field">
     <%= f.label :user %><br>
-    <%= f.text_field :user %>
+    <%#= f.text_field :user %>
+    <%= collection_select(:line_item, :user_id, User.all.order(:name), :id, :name, :prompt => true) %>
+
   </div>
   <div class="field">
     <%= f.label :vendor %><br>
-    <%= f.text_field :vendor %>
+    <%= collection_select(:line_item, :vendor_id, Vendor.all.order(:name), :id, :name, :prompt => true) %>
   </div>
   <div class="field">
     <%= f.label :activity %><br>
-    <%= f.text_field :activity %>
+    <%= collection_select(:line_item, :activity_id, Activity.all.order(:name), :id, :name, :prompt => true) %>
   </div>
   <div class="actions">
     <%= f.submit %>

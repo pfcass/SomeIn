@@ -21,9 +21,9 @@
         <td><%= line_item.purchased_on %></td>
         <td><%= line_item.cost %></td>
         <td><%= line_item.comment %></td>
-        <td><%= line_item.user %></td>
-        <td><%= line_item.vendor %></td>
-        <td><%= line_item.activity %></td>
+        <td><%= line_item.user.name %></td>
+        <td><%= line_item.vendor.name %></td>
+        <td><%= line_item.activity.name %></td>
         <td><%= link_to 'Show', line_item %></td>
         <td><%= link_to 'Edit', edit_line_item_path(line_item) %></td>
         <td><%= link_to 'Destroy', line_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
