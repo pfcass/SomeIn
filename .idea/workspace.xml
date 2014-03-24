@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="78edb378-1d25-4922-a595-9f0223ff6190" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/line_items/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/line_items/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/line_items/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/line_items/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/line_items/index.html.erb" afterPath="$PROJECT_DIR$/app/views/line_items/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/line_items/new.html.erb" afterPath="$PROJECT_DIR$/app/views/line_items/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/line_items/show.html.erb" afterPath="$PROJECT_DIR$/app/views/line_items/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/line_items/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="39" selection-start="583" selection-end="583" vertical-scroll-proportion="-2.7916667" vertical-offset="308" max-vertical-offset="645">
+            <state line="8" column="27" selection-start="295" selection-end="295" vertical-scroll-proportion="0.27242523" vertical-offset="38" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/line_items/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="30" selection-start="735" selection-end="735" vertical-scroll-proportion="-3.75" vertical-offset="315" max-vertical-offset="735">
+            <state line="21" column="26" selection-start="741" selection-end="741" vertical-scroll-proportion="-3.75" vertical-offset="225" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/line_items/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.75" vertical-offset="225" max-vertical-offset="600">
+            <state line="17" column="34" selection-start="879" selection-end="879" vertical-scroll-proportion="-8.791667" vertical-offset="44" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -78,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="6" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.8630573" vertical-offset="59" max-vertical-offset="525">
+            <state line="22" column="6" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-11.291667" vertical-offset="59" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -105,11 +105,11 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/line_items/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/line_items/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/line_items/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/line_items/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/line_items/index.html.erb" />
       </list>
     </option>
   </component>
@@ -599,7 +599,11 @@
       <created>1395664218096</created>
       <updated>1395664218096</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Before doing the theme, which wil overwrite some stuff">
+      <created>1395673983782</created>
+      <updated>1395673983782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -640,7 +644,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Just enough to get bootstrap working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just enough to get bootstrap working" />
+    <MESSAGE value="Before doing the theme, which wil overwrite some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Before doing the theme, which wil overwrite some stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -676,16 +681,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/line_items/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="39" selection-start="583" selection-end="583" vertical-scroll-proportion="-2.7916667" vertical-offset="308" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/line_items/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="735" selection-end="735" vertical-scroll-proportion="-3.75" vertical-offset="315" max-vertical-offset="735">
+        <state line="21" column="26" selection-start="741" selection-end="741" vertical-scroll-proportion="-3.75" vertical-offset="225" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
@@ -693,13 +691,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/line_items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/line_items/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.75" vertical-offset="225" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
@@ -713,7 +704,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.8630573" vertical-offset="59" max-vertical-offset="525">
+        <state line="22" column="6" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-11.291667" vertical-offset="59" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/line_items/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="34" selection-start="879" selection-end="879" vertical-scroll-proportion="-8.791667" vertical-offset="44" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/line_items/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="295" selection-end="295" vertical-scroll-proportion="0.27242523" vertical-offset="38" max-vertical-offset="750">
           <folding />
         </state>
       </provider>

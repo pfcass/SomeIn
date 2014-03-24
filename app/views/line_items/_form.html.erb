@@ -1,43 +1,44 @@
-<%= form_for(@line_item) do |f| %>
-  <% if @line_item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@line_item.errors.count, "error") %> prohibited this line_item from being saved:</h2>
-
-      <ul>
-      <% @line_item.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @line_item, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :purchased_on, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.date_select :purchased_on %>
     </div>
-  <% end %>
+  </div>
+  <div class="control-group">
+    <%= f.label :cost, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :cost, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :comment, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :comment, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :user_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= collection_select(:line_item, :user_id, User.all.order(:name), :id, :name, :prompt => true) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :vendor_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= collection_select(:line_item, :vendor_id, Vendor.all.order(:name), :id, :name, :prompt => true) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :activity_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= collection_select(:line_item, :activity_id, Activity.all.order(:name), :id, :name, :prompt => true) %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :purchased_on %><br>
-    <%= f.date_select :purchased_on %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br>
-    <%= f.text_field :cost %>
-  </div>
-  <div class="field">
-    <%= f.label :comment %><br>
-    <%= f.text_area :comment %>
-  </div>
-  <div class="field">
-    <%= f.label :user %><br>
-    <%#= f.text_field :user %>
-    <%= collection_select(:line_item, :user_id, User.all.order(:name), :id, :name, :prompt => true) %>
-
-  </div>
-  <div class="field">
-    <%= f.label :vendor %><br>
-    <%= collection_select(:line_item, :vendor_id, Vendor.all.order(:name), :id, :name, :prompt => true) %>
-  </div>
-  <div class="field">
-    <%= f.label :activity %><br>
-    <%= collection_select(:line_item, :activity_id, Activity.all.order(:name), :id, :name, :prompt => true) %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                line_items_path, :class => 'btn' %>
   </div>
 <% end %>
