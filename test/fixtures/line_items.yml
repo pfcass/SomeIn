@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purchased_on: 2014-03-24
+  cost: 9.99
+  comment: MyText
+  user: 
+  vendor: 
+  activity: 
+
+two:
+  purchased_on: 2014-03-24
+  cost: 9.99
+  comment: MyText
+  user: 
+  vendor: 
+  activity: 
