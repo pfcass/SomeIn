@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-User.create( [{name: 'Arne'}, {name: 'Dan'}, {name: 'Peter'}])
+User.create!(:email => "pfcass@casswitz.com", :password => "Ssafcdi0")
 Vendor.create( [ {name: 'West Marine'}, {name: 'Jackson Hdwe'}])
 Activity.create( [{name: 'Fee-Local'},{name: 'Fee-State'},{name: 'Fee-other'},{name: 'Supplies'}])
 Activity.create( [{name: 'Mooring Maintenance'},{name: 'Maintenance'},{name: 'Upgrade'},{name: 'Misc'}])

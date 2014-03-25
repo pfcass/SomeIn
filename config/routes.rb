@@ -1,4 +1,5 @@
 SomeIn::Application.routes.draw do
+  devise_for :users
   resources :line_items
 
   resources :activities
@@ -12,6 +13,7 @@ SomeIn::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root 'line_items#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -49,3 +49,6 @@ end
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
+
+# add authentication
+gem 'devise'
